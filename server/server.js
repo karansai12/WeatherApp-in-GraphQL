@@ -63,17 +63,6 @@ const cities = [
 const typeDefs = `type Query{
 getCities:[City]
 getCityByName(name:String!):City
-getUsers:[User]
-getUserById(id: ID!):User
-}
-type Mutation{
-createUser(name:String!,age:Int!, isMarried:Boolean): User
-}
-type User{
-id:ID
-name:String
-age:Int
-isMarried:Boolean
 }
 type City {
 id:ID
